@@ -1,0 +1,14 @@
+/* v1.1 - Replaced with Tailwind CSS v4 import and shared component classes */
+/* Purpose: Global styles — Tailwind base, .input / .btn-primary / .btn-secondary used across the app */@import "tailwindcss";
+
+@layer components {
+  .input {
+    @apply w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 focus:border-transparent transition;
+  }
+  .btn-primary {
+    @apply bg-rose-500 hover:bg-rose-600 text-white font-medium px-4 py-2 rounded-xl text-sm transition disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-700 font-medium px-4 py-2 rounded-xl text-sm border border-gray-200 transition;
+  }
+}
